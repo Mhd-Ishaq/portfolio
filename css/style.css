@@ -43,16 +43,17 @@ a {
   width: 80%;
   margin: 60px auto;
 }
-.row {
+/* .row {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
 }
 
 .col {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 .btn {
   width: 180px;
@@ -81,7 +82,7 @@ a {
 .navbar {
   width: 100%;
   padding: 30px;
-  display: flex; /*By Default it will align them in a single row  */
+  display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -108,7 +109,7 @@ a {
   cursor: pointer;
 }
 
-.mobile-brand img {
+.mobile-brand {
   display: none;
 }
 
@@ -127,51 +128,55 @@ social-icons ul li a:hover {
 }
 /* Navbar CSS */
 
-/* Header css */
-.header {
-  margin-top: 0px;
-  height: 80vh;
-  position: relative;
-}
-
-.header .circle {
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: var(--pink);
-  /* position: absolute; */
-  position: absolute;
-  top: 20%;
-  right: -40%;
-  z-index: -1;
-}
-
-.header .col-1 {
+.row{
   width: 100%;
-  padding: 30px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-
-.header .col-1 h1 {
-  font-size: 50px;
+.row .col-1,
+.row .col-2{
+  width: 48%;
+  height: 100%;
+  /* border: 2px solid black; */
+}
+.row .col-1{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.row .col-1 h1 {
+  font-size: 3rem;
   color: var(--heading);
   font-weight: 900;
+  /* text-align: center; */
+  line-height: 1.5;
 }
-
-.header .col-1 p {
-  font-size: 20px;
+.row .col-1 p {
+  font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 400;
   margin: 30px auto;
 }
+.row .col-1 i{
+  margin-left: 10px;
+}
 
-.header .col-2 {
-  flex-direction: row;
+.row .col-2 .hero-img{
   width: 100%;
+  height:100%;
+  /* border:2px solid red */
+}
+.row .col-2 .hero-img img{
+  width: 87%;
+  border-radius: 50%;
 }
 
-.header .col-2 img {
-  max-width: 80%;
-}
+
 
 /* header */
 
@@ -179,7 +184,7 @@ social-icons ul li a:hover {
 .skills .title {
   text-align: center;
   margin-bottom: 60px;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .grid-wrapper {
@@ -196,6 +201,13 @@ social-icons ul li a:hover {
 
 .icon-title img {
   margin-right: 20px;
+}
+.icon {
+  width: 13%;
+  margin-right: 20px;
+}
+.icon img{
+  width: 100%;
 }
 
 .icon-title h3 {
@@ -227,17 +239,39 @@ social-icons ul li a:hover {
 
 .projects .title {
   text-align: left;
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 30px;
 }
 .projects .grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  grid-gap: 4rem;
 }
 
 .projects .grid-box {
   position: relative;
+  /* border: 2px solid rgb(226, 130, 130); */
+  border-radius: 1rem;
+  height: 80vh;
+}
+
+.projects .box img{
+  width: 100%;
+  height: auto;
+  height: auto;
+  border-radius: 1rem;
+}
+.projects .grid-box h2{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.projects p{
+  font-size: 1.2rem;
+  font-weight: lighter;
+  line-height: 1.5;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .projects .grid-box .hover {
@@ -245,7 +279,7 @@ social-icons ul li a:hover {
   top: 50%;
   left: 15%;
   width: 40%;
-  height: 40%;
+  height: 30%;
   background: #55527c6e;
   display: flex;
   align-items: center;
@@ -310,7 +344,7 @@ social-icons ul li a:hover {
   display: flex;
 }
 
-.contact .quick-links ul li {
+.contact .quick-links ul li a {
   margin: 0 20px;
   color: var(--purple);
   font-size: 18px;
@@ -327,19 +361,170 @@ social-icons ul li a:hover {
 }
 
 /* Responsive CSS */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+  .navbar {
+    height: 100vh;
+    flex-direction: column;
+    display: none;
+    justify-content: space-around;
+  }
+  .mobile-brand{
+    display: block;
+    padding-left: 2rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+  }
+  .btn-toggle i{
+    display: block;
+  }
+
+  .navbar .brand {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+  .nav-list ul {
+    flex-direction: column;
+  }
+
+  .nav-list ul li {
+    margin-top: 20px !important;
+  }
+  .nav-list ul li a {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .social-icons {
+    margin-bottom: 0.5rem;
+  }
+  .container {
+    width: 80%;
+    margin: 2rem auto;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .row .col-1,
+  .row .col-2{
+    width: 80%;
+    text-align: center;
+  }
+  .row .col-1 a{
+    margin-left: 7rem;
+    text-align: center;
+  }
+  .row .col-2{
+    margin-top: 2rem;
+  }
+  
+  .skills{
+    margin-top: 4rem;
+  }
+  .skills .title{
+    margin-bottom: 1rem;
+  }
+  
+  .projects .title{
+    text-align: center;
+  }
+
+  .projects .grid-box{
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .contact .container{
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  .contact .quick-links ul{
+    margin-left: 4rem;
+  }
+  .contact .quick-links ul li {
+    margin: 0 10px;
+  }
+  .contact h3 {
+    margin: 1.2rem auto;
+  }
+  
+  .contact h3 a {
+    color: var(--sky-blue);
+    font-size: 1.5rem;
+  }
+  
+  .contact h3 a .fas {
+    margin-right: 0.8rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .row .col-1 a{
+    margin-left: 2.5rem;
+  }
+  .projects{
+    margin-right:15px;
+
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .container{
+    width: 90%;
+    margin-right: 2rem;
+  }
+}
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .header.container {
+    width: 100%;
+    margin-left: 4rem;
+  }
+  .projects{
+    margin-left: 4rem;
+  }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+/* @media only screen and (max-width: 700px) {
   h1 {
     font-weight: 32px;
-  }
+  } */
 
   /* Navabar */
 
-  .mobile-brand img {
+  /* .mobile-brand  {
     display: block;
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 40px;
+    width: 25%;
   }
   .navbar {
     height: 100vh;
@@ -392,4 +577,4 @@ social-icons ul li a:hover {
   .header .col-2 img {
     max-width: 90%;
   }
-}
+} */

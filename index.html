@@ -21,40 +21,39 @@
   <body>
     <!-- Navbar Start -->
     <div class="mobile-brand">
-      <img src="./assests/images/logo.png" alt="logo" class="logo" />
+      <span class="logo" style="font-weight:  700px; "><b>Mohammed Ishaq</b></span>
     </div>
     <nav class="navbar">
       <div class="brand">
-        <img src="./assests/images/logo.png" alt="logo" class="logo" />
+        <span class="logo" style="font-size: 2rem;font-weight: 900; ">Mohammed Ishaq</span>
       </div>
       <div class="nav-list">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div class="social-icons">
         <ul>
           <li>
-            <a href="#">
+            <a target="_blank" href="https://www.facebook.com/mohammed.ishaq.372019">
               <i class="fab fa-facebook-square"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com/__mhmd_ishaq">
               <i class="fab fa-instagram"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a target="_blank" href="https://github.com/Mhd-Ishaq">
               <i class="fab fa-github"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a target="_blank" href="#">
               <i class="fab fa-linkedin"></i>
             </a>
           </li>
@@ -66,28 +65,27 @@
     </div>
     <!-- Navbar End -->
     <!-- header Start -->
-    <header class="header container">
+    <header class="header container" id="Home">
       <div class="hero row">
         <div class="col col-1">
           <h1>
-            Hey, I'm a <span class="highlight">Front End</span> Web Developer
+            Hey, I'm a <span class="highlight">Full Stack</span> Web Developer
           </h1>
           <p>
-            Hi, I am Mohammed ishaq, ipsum dolor sit amet consectetur adipisicing
-            elit. Ad, enim?
+            Hi, I'm <span class="highlight">Mohammed IShaq</span> A Full Stack Web Developer building the Websites and Web Applications that leads to the success of the overall product.
           </p>
-          <a href="#" class="btn">Resume <i class="fas fa-download"></i></a>
+          <a href="./assests/pdf/Resume.pdf" download="mohammed_ishaq resume.pdf" class="btn">Resume <i class="fas fa-download"></i></a>
         </div>
         <div class="col col-2">
           <div class="hero-img">
-            <img src="./assests/images/profile.png" alt="profile image" />
+            <img src="./assests/images/profile pic.jpeg" alt="profile image" />
           </div>
         </div>
       </div>
     </header>
     <!-- header End -->
     <!-- Skills Start -->
-    <section class="skills container">
+    <section class="skills container" id="skills">
       <div class="title">
         <h2>My Skills</h2>
       </div>
@@ -98,113 +96,136 @@
             <h3>HTML</h3>
           </div>
           <p>
-            <span class="highlight">Lorem ipsum </span>dolor sit amet
-            consectetur adipisicing elit. Eius impedit dignissimos maxime cum
-            eligendi. Quos.
+            <span class="highlight">HTML </span>stands for HyperText Markup Language.HTML <b>marks up the content of a site</b>. It provide acess to an incredible amount of functionality that's already built directly into the browser.
           </p>
         </div>
         <div class="grid-box">
           <div class="icon-title">
-            <img src="./assests/images/skill-2.png" alt="skill#1" />
+            <div class="icon">
+              <img src="./assests/images/skill-4.png" alt="skill#2" />
+            </div>
             <h3>CSS</h3>
           </div>
           <p>
-            <span class="highlight">Lorem ipsum </span>dolor sit amet
-            consectetur adipisicing elit. Eius impedit dignissimos maxime cum
-            eligendi. Quos.
+            <span class="highlight">CSS </span>stands for Cascading Styling Sheets.
+            CSS is <b>the language for describing the presentation of Web pages, including colors,layout,and fonts.</b>
           </p>
         </div>
         <div class="grid-box">
           <div class="icon-title">
-            <img src="./assests/images/skill-3.png" alt="skill#1" />
+            <img src="./assests/images/skill-3.png" alt="skill#3" />
             <h3>Responsive Web Development</h3>
           </div>
           <p>
-            <span class="highlight">Lorem ipsum </span>dolor sit amet
-            consectetur adipisicing elit. Eius impedit dignissimos maxime cum
-            eligendi. Quos.
+            <span class="highlight">Responsive </span>design <b>provides the best user experience , no matter what type of device user uses to view website. </b>
           </p>
         </div>
         <div class="grid-box">
           <div class="icon-title">
-            <img src="./assests/images/skill-4.png" alt="skill#1" />
-            <h3>Programming</h3>
+            <img src="./assests/images/skill-2.png" alt="skill#4" />
+            <h3>JavaScript</h3>
           </div>
           <p>
-            <span class="highlight">Lorem ipsum </span>dolor sit amet
-            consectetur adipisicing elit. Eius impedit dignissimos maxime cum
-            eligendi. Quos.
-          </p>
+            <span class="highlight">JavaScript </span>allows us to <b> add dynamic behavior to the webpage and add special effects to the webpage.</b>JavaScript helps us to execute complex actions ans also enabels the interaction of websites with users. 
         </div>
       </div>
     </section>
     <!-- Skills End -->
     <!-- Projects Start -->
-    <section class="projects container">
+    <section class="projects container" id="projects">
       <div class="title">
         <h2>Projects</h2>
       </div>
       <div class="grid-wrapper">
         <div class="grid-box">
-          <img src="./assests/images/prj-1.png" alt="project#1" />
+          <div class="title">
+            <h2>Tip Calculator</h2>
+            <p>calculates the tip per person according to the bill value and number of peoples. </p>
+          </div>
+          <div class="box">
+
+            <img src="./assests/images/projc-1.jpg" alt="project#1" />
+          </div>
           <div class="hover">
-            <a href="#" class="cta">GitHub URL</a>
-            <a href="#" class="cta">Live URL</a>
+            <a target="_blank" href="https://github.com/Mhd-Ishaq/tip-calculator" class="cta">GitHub URL</a>
+            <a target="_blank" href="https://ishaq-tip-calculator.netlify.app/" class="cta">Live URL</a>
           </div>
         </div>
         <div class="grid-box">
-          <img src="./assests/images/prj-2.png" alt="project#1" />
+          <div class="title">
+            <h2>PiG GAme</h2>
+            <p> 2 player game, in which the player wins if he gets 100 points.</p>
+          </div>
+          <div class="box">
+
+          </div>
+          <img src="./assests/images/projc-3.jpeg"width="100%"
+          height="auto" alt="project#1" />
           <div class="hover">
-            <a href="#" class="cta">GitHub URL</a>
-            <a href="#" class="cta">Live URL</a>
+            <a target="_blank"  href="https://github.com/Mhd-Ishaq/PiG-Game" class="cta">GitHub URL</a>
+            <a target="_blank" href="https://is-pig-game.netlify.app" class="cta">Live URL</a>
           </div>
         </div>
         <div class="grid-box">
-          <img src="./assests/images/prj-3.png" alt="project#1" />
+          <div class="title">
+            <h2>Interactive Rating component</h2>
+            <p>user can rate the rating component, after the rating it's show the thank you state.</p>
+          </div>
+            <img src="./assests/images/projc-2.jpg" width="100%" alt="project#1" />
           <div class="hover">
-            <a href="#" class="cta">GitHub URL</a>
-            <a href="#" class="cta">Live URL</a>
+            <a target="_blank" href="https://github.com/Mhd-Ishaq/Interactive-Rating-component" class="cta">GitHub URL</a>
+            <a target="_blank" href="https://i-rating-component.netlify.app" class="cta">Live URL</a>
           </div>
         </div>
+        
         <div class="grid-box">
-          <img src="./assests/images/prj-4.png" alt="project#1" />
-          <div class="hover">
-            <a href="#" class="cta">GitHub URL</a>
-            <a href="#" class="cta">Live URL</a>
+          <div class="title">
+            <h2>Rock Paper Scissors Game</h2>
+            <p>Takes the users Input through icons and computer makes the choice.Based on the choices Determines the Winner </p>
           </div>
-        </div>
-        <div class="grid-box">
-          <img src="./assests/images/prj-5.png" alt="project#1" />
+          <div class="box">
+            <img src="./assests/images/rps.jfif"width="100%"
+            height="100%" alt="project#1" /> 
+          </div>
           <div class="hover">
-            <a href="#" class="cta">GitHub URL</a>
-            <a href="#" class="cta">Live URL</a>
+            <a target="_blank" href="https://github.com/Mhd-Ishaq/Rock-paper-scissors-game" class="cta">GitHub URL</a>
+            <a target="_blank" href="https://i-rock-paper-scissors.netlify.app" class="cta">Live URL</a>
           </div>
         </div>
       </div>
     </section>
     <!-- Projects End -->
     <!-- Contact Start -->
-    <footer class="contact">
+    <footer class="contact" id="contact">
       <div class="container">
         <h2>Contact Me</h2>
         <h3>
-          <a href="mailto: hello@abc.com"
-            ><i class="fas fa-envelope"></i> hello@abc.com</a
+          <a href="mailto:mdishaq3333@gmail.com"
+            ><i class="fas fa-envelope"></i>mdishaq3333@gmail.com</a
           >
         </h3>
         <div class="quick-links">
           <ul>
-            <li>Home</li>
-            <li>SkillS</li>
-            <li>Projects</li>
-            <li>Blogs</li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li>
+              <a target="_blank" href="https://github.com/Mhd-Ishaq">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-    </footer>
-    <div class="copyright">
-      <p>&copy; 2022 Mohammed Ishaq</p>
+      <div class="copyright">
+      <p>&copy; 2022 Mohammed Ishaq </p>
     </div>
+    </footer>
     <!-- Contact End -->
 
     <script>
@@ -217,21 +238,3 @@
     </script>
   </body>
 </html>
-<!-- inline CSS -->
-<!-- 
-  --- It is repetitive 
-  --- It will take a lot of time in updating/changing
-  --- It makes HTML code heavy
-  --- If will make website slow
-
-  We use inline css, via styling by JavaScript - Inline CSS will have highest priority
- -->
-<!--  External CSS -->
-<!-- CSS Selectors -->
-<!-- 
-  --- Tagname(Ex: h1, p, div, header)
-  --- Psuedo classes & Psuedo Elements
-  --- class and ID - Names for our elements and Containers
-  --- ID can also be used for connecting - ID has to be unique
-  --- class we use for Styling, ID we use for Logic(JavaScript)
- -->
